@@ -5,6 +5,7 @@ import boto3
 from datetime import datetime, timedelta, timezone
 
 def format_game_data(game):
+    # Previous implementation ##
     status = game.get("Status", "Unknown")
     away_team = game.get("AwayTeam", "Unknown")
     home_team = game.get("HomeTeam", "Unknown")
